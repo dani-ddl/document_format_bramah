@@ -61,10 +61,17 @@
     <!-- Cabecera -->
 
   <div class="row">
-                <div class="col-6" style="display:block; width:38%;float:left;padding-right:2%;" >
+      <!-- logo -->
+                <div class="col-6" style="display:block; width:38%;float:left;" >
+
                     <img t-if="o.company_id.logo" t-att-src="image_data_uri(o.company_id.logo)" alt="Logo" style="width:100%"/>
+
                 </div>
-                <div style= "width:60%; display:block;float:left;" >
+      <!-- fin logo -->
+
+      <!-- Datos Empresa -->
+
+                <div>
                   <div t-if="o.company_id.name" style="float:left;width:60%;"><span style="color:black; margin-bottom:0px" t-field="o.company_id.name"/></div>
                     <div t-if="o.company_id.vat" style="float:left;width:40%;color:black;">CIF: <span t-field="o.company_id.vat"/></div>
                   <hr style="heigth:5px; color:grey; margin: 3px;clear:both;" ></hr>
@@ -101,9 +108,12 @@
               </div>
             </div>
 
+      <!-- Fin datos empresa -->
+
       <!-- Fin cabecera -->
 
        <!-- Datos documento -->
+
               <div style="width:60%;float:left;padding-bottom:30px;clear:both;margin-top:10px;font-size:1.1em;">
 
               <h2 style="color:black;">
@@ -270,9 +280,9 @@
                               <span style="display:inline-block;">PORTES</span>
                               <span>0.00€</span>
                             </div>
-                            <div style="width:246px; float:left;">
+                            <div style="width:320px; float:left;">
                               <span style="display:inline-block;margin-left:5px;">FORMA DE PAGO</span>
-                              <span t-field="o.payment_term_id.note"/>
+                              <span t-field="o.payment_term_id.name"/>
                             </div>
                           </div>
                           <!-- Fin primera fila -->
