@@ -117,12 +117,12 @@
               <div style="width:60%;float:left;padding-bottom:30px;clear:both;margin-top:10px;font-size:1.1em;">
 
               <h2 style="color:black;">
-                <span t-if="o.type == 'out_invoice' and o.state in ('open', 'in_payment', 'paid')">Invoice</span>
-                        <span t-if="o.type == 'out_invoice' and o.state == 'draft'">Draft Invoice</span>
-                        <span t-if="o.type == 'out_invoice' and o.state == 'cancel'">Cancelled Invoice</span>
-                        <span t-if="o.type == 'out_refund'">Credit Note</span>
-                        <span t-if="o.type == 'in_refund'">Vendor Credit Note</span>
-                        <span t-if="o.type == 'in_invoice'">Vendor Bill</span>
+                <span t-if="o.type == 'out_invoice' and o.state in ('open', 'in_payment', 'paid')">Factura</span>
+                        <span t-if="o.type == 'out_invoice' and o.state == 'draft'">Factura Borrador</span>
+                        <span t-if="o.type == 'out_invoice' and o.state == 'cancel'">Factura cancelada</span>
+                        <span t-if="o.type == 'out_refund'">Factura Rectificativa</span>
+                        <span t-if="o.type == 'in_refund'">Factura Rectificativa</span>
+                        <span t-if="o.type == 'in_invoice'">Factura De Vendedor</span>
               </h2>
               <div>
                 <span style="width:100px;display:inline-block;font-size:1.3em;">Numero :</span><span style="margin-left:5px;height:21;" t-field="o.number"/>
