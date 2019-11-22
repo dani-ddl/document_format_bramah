@@ -35,12 +35,12 @@
 
         <template id="report_invoice_document_bramah_email" inherit_id="account.report_invoice_document">
 
-           <!--  <xpath expr="/t/t/t[@t-set='address']" position="replace">
+             <xpath expr="/t/t/t[@t-set='address']" position="replace">
 
                 <div></div>
 
 
-            </xpath> -->
+            </xpath>
 
 
               <xpath expr="//div[@class='page']" position="replace">
