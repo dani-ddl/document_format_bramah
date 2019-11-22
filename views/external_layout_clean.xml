@@ -6,8 +6,8 @@
 
             <!-- Header -->
 
-            <xpath expr="//div[@class='header']" position="replace">
-               <div>
+            <xpath expr="//div[@class='o_clean_header']" position="replace">
+
             <!-- Datos documento -->
               <div style="width:55%;float:left;margin-left:15px;margin-top:217px; position:absolute;top:-160px;">
 
@@ -57,7 +57,6 @@
             </div>
 
             <!-- Fin datos cliente -->
-            </div>
                 <div style="clear:both;"></div>
 
             </xpath>

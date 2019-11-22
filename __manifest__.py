@@ -21,7 +21,8 @@
         'views/report_saleorder_document.xml',
         'views/external_layout_clean.xml',
         'views/report_delivery_document.xml',
-        'views/report_invoice_document_email.xml'
+        'views/report_invoice_document_email.xml',
+        'views/report_invoice_document_preimpreso.xml'
     ],
     'demo': [],
     'installable': True,
